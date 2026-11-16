@@ -1,0 +1,1 @@
+Place foreground/background in Android res/drawable-nodpi (or generate mipmap layers using Android Studio Image Asset). Put ic_launcher.xml in res/mipmap-anydpi-v26. Check mask safe zone on actual device. Background may instead be configured as a color resource. This is a raster-source adaptive icon, not an original vector master.

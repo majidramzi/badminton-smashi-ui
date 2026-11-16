@@ -1,21 +1,14 @@
-# Prompt for Cursor / Claude
+# Cursor / Claude implementation prompt — Smashi UI v4
+You are integrating the provided Smashi design handoff into an EXISTING Next.js + React + TypeScript + Tailwind application. Do not scaffold a replacement app.
 
-You are working inside the existing Smashi app. Read the existing frontend architecture before modifying files. Web stack: Next.js, React, TypeScript, Tailwind CSS, custom CSS/components. Mobile framework is custom/unspecified; do not assume React Native.
-
-Task: integrate the `Smashi_UI_v2` dashboard presentation into the current codebase while preserving the existing app logic, API contracts, routes, and user flows.
-
-Requirements:
-1. Use exactly the approved brand palette: Navy #0C2747, Deep Teal #066B6E, Teal #14B8A6, Mint #8FE9D1, Off White #F7FAF9, Warm Sand #F3EAD7. Do not introduce lime or bright neon accents.
-2. Use restrained premium glassmorphism, not highly luminous neon: subtle translucency, modest blur, restrained borders.
-3. Use the *actual approved* Smashi logo asset already in the project, S + Smashi wordmark. The reference image is not a master asset.
-4. Icons are provided individually under assets/icons, with separate normal and hover SVG/PNG exports. Prefer the supplied icon files over unrelated library icons. Map hover to selected/pressed on touch devices.
-5. Keep only Home, Calendar, Profile in the bottom floating dock. No new tabs or dashboard features.
-6. Dashboard sections, in order: dynamic time-of-day greeting; Design a Training; combined Upcoming Training + Group; horizontal Weekly Progress; AI Insights (two lines, only when supported by real insight data); Recent Sessions; Friends Activity.
-7. Greeting subtitle exact text: "I am here to help you build today's training."
-8. No racket or shuttle icon inside Design a Training. No mascot characters.
-9. Design a Training can have a very subtle motion effect; respect reduced-motion preference.
-10. Bind all cards to existing data. Do not replace real data with placeholder training times, fake people, or invented AI recommendations.
-11. Ensure responsive mobile layout, safe areas, keyboard accessibility, and readable text contrast.
-12. Inspect existing dependencies and code conventions before integrating. Do not rewrite navigation, state management, or business logic.
-
-Deliverables: working integrated dashboard, component and token mapping, and a short note listing files changed and any unresolved integration points. If existing app structure differs from sample, adapt it rather than copying blindly.
+1. Read docs/V4_DELIVERY_STATUS.md and the other docs before changing files.
+2. Inspect existing routes, auth, data types, design tokens and icon system. Propose a small file-by-file integration plan.
+3. Preserve exact approved brand palette. Use Montserrat only after fetching licensed official fonts. No font files are bundled.
+4. Use approved source logo assets; do not replace the S with a newly invented symbol. SVG logo wrappers embed raster and are not vector masters.
+5. Integrate login and wizard starter components with existing callbacks/data; never hardcode fake user training insights.
+6. Dashboard: time-aware greeting, exact subtitle 'I’m here to help you build today’s training.', one animated Design a Training CTA (no shuttle/racket mascot), one combined Upcoming Training + Group card, horizontal weekly progress, prominent two-line AI Insights, separate Recent Sessions and Friends Activity cards, and exactly three tabs Home / Calendar / Profile.
+7. Keep glass subtle and premium, with accessible contrast and reduced-motion support. Respect iOS safe areas, Android adaptive icon safe zone, responsive widths.
+8. Icon assets have normal/hover pairs; use active state for touch devices (not hover alone).
+9. Splash animation timing in docs/SPLASH_ANIMATION.md. Avoid forcing splash delays on slow devices.
+10. Run typecheck/lint/build, test keyboard navigation and mobile viewport, and provide screenshots for comparison.
+11. Never claim this is a full production-ready integration until real app routes, API/auth and visual QA pass.
