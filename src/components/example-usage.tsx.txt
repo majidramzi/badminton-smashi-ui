@@ -1,0 +1,24 @@
+// Example only. Connect to real app state and real approved logo asset.
+import SmashiDashboard from './SmashiDashboard';
+
+export function ExampleDashboard() {
+  return <SmashiDashboard
+    userName="Arash"
+    localHour={19}
+    logoSrc="/brand/approved-smashi-logo.svg"
+    iconBasePath="/smashi/icons"
+    nextTraining={{title:'Training',dateLabel:'Tomorrow',timeLabel:'17:00',groupCount:3,memberInitials:['A','M','S']}}
+    completedSessions={2}
+    weeklyGoal={5}
+    insight={null} // Show only when an actual AI-generated insight is available
+    recentSessionsSummary="3 completed trainings · Most recent: Nov 10"
+    friendsActivitySummary="Majid completed a training"
+    onDesignTraining={()=>{}}
+    onUpcomingTraining={()=>{}}
+    onInsights={()=>{}}
+    onRecentSessions={()=>{}}
+    onFriendsActivity={()=>{}}
+    onNotifications={()=>{}}
+    onNavigate={()=>{}}
+  />;
+}

@@ -1,0 +1,34 @@
+{
+  "palette": {
+    "navy": "#0C2747",
+    "deepTeal": "#066B6E",
+    "teal": "#14B8A6",
+    "mint": "#8FE9D1",
+    "offWhite": "#F7FAF9",
+    "warmSand": "#F3EAD7"
+  },
+  "states": [
+    "normal",
+    "hover"
+  ],
+  "formats": [
+    "svg",
+    "png_128",
+    "png_512"
+  ],
+  "icons": [
+    "home",
+    "calendar",
+    "profile",
+    "notification",
+    "design-training",
+    "upcoming-training",
+    "group",
+    "progress",
+    "ai-insights",
+    "recent-sessions",
+    "friends-activity",
+    "arrow-right",
+    "chevron-right"
+  ]
+}

@@ -1,0 +1,52 @@
+/* Smashi approved palette. No new brand colors. Shared design tokens for web/mobile. */
+:root {
+  --sm-navy:#0C2747;
+  --sm-deep-teal:#066B6E;
+  --sm-teal:#14B8A6;
+  --sm-mint:#8FE9D1;
+  --sm-off-white:#F7FAF9;
+  --sm-warm-sand:#F3EAD7;
+  --sm-radius:20px;
+  --sm-border:rgba(143,233,209,.22);
+  --sm-glass:rgba(6,107,110,.25);
+  --sm-shadow:0 10px 30px rgba(0,0,0,.16);
+}
+.sm-v2-root,.sm-v2-root * {box-sizing:border-box}
+.sm-v2-root {min-height:100dvh;color:var(--sm-off-white);font-family:Inter,ui-sans-serif,system-ui,sans-serif;background:radial-gradient(ellipse at 80% 12%,rgba(20,184,166,.12),transparent 35%),linear-gradient(165deg,var(--sm-navy),#0C2747 65%,var(--sm-deep-teal));overflow-x:hidden}
+.sm-v2-shell {width:min(100%,560px);margin:0 auto;padding:22px 16px 124px}
+.sm-v2-header {display:flex;align-items:center;justify-content:space-between;min-height:52px;margin-bottom:28px}
+.sm-v2-logo {display:block;max-width:180px;max-height:46px;object-fit:contain;object-position:left center}
+.sm-v2-notification {border:0;background:none;position:relative;padding:0;cursor:pointer}
+.sm-v2-notification .sm-v2-nav-icon{width:46px;height:46px}
+.sm-v2-unread{position:absolute;right:5px;top:4px;width:8px;height:8px;border-radius:50%;background:var(--sm-mint);border:1px solid var(--sm-navy)}
+.sm-v2-welcome{position:relative;padding:0 4px 30px;min-height:116px}
+.sm-v2-welcome h1{font-size:clamp(25px,6vw,32px);line-height:1.25;margin:0 0 12px;font-weight:750;letter-spacing:-.7px}
+.sm-v2-welcome h1 span{color:var(--sm-mint)}
+.sm-v2-welcome p{margin:0;padding-left:11px;border-left:2px solid var(--sm-teal);font-size:14px;line-height:1.55;color:var(--sm-off-white)}
+.sm-v2-stack{display:grid;gap:14px}
+.sm-v2-card {width:100%;border-radius:var(--sm-radius);border:1px solid var(--sm-border);background:linear-gradient(130deg,rgba(6,107,110,.30),rgba(12,39,71,.74));box-shadow:var(--sm-shadow),inset 0 1px 0 rgba(247,250,249,.08);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);color:inherit}
+button.sm-v2-card{text-align:left;cursor:pointer;font:inherit}
+.sm-v2-nav-icon{position:relative;display:block;width:52px;height:52px;flex:none}
+.sm-v2-nav-icon img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;transition:opacity .18s ease}
+.sm-v2-icon-hover{opacity:0}
+button:hover .sm-v2-icon-hover,button:focus-visible .sm-v2-icon-hover,button[aria-current=page] .sm-v2-icon-hover{opacity:1}
+button:hover .sm-v2-icon-normal,button:focus-visible .sm-v2-icon-normal,button[aria-current=page] .sm-v2-icon-normal{opacity:0}
+.sm-v2-cta{min-height:98px;padding:16px 18px;display:flex;align-items:center;gap:16px;border-color:rgba(143,233,209,.40);background:linear-gradient(120deg,rgba(6,107,110,.70),rgba(12,39,71,.75));animation:sm-v2-soft-pulse 5s ease-in-out infinite}
+.sm-v2-cta-content{min-width:0;flex:1}.sm-v2-cta-content strong{display:block;font-size:clamp(21px,5vw,27px);line-height:1.2;letter-spacing:-.45px}.sm-v2-cta-content small{display:block;font-size:12px;line-height:1.4;color:var(--sm-mint);margin-top:6px}
+.sm-v2-arrow{width:39px;height:39px;flex:none}.sm-v2-arrow img{width:100%;height:100%}
+.sm-v2-training{padding:17px;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:15px}
+.sm-v2-training-main,.sm-v2-training-group{min-width:0}.sm-v2-training-group{padding-left:15px;border-left:1px solid var(--sm-border)}
+.sm-v2-eyebrow{display:flex;align-items:center;gap:7px;font-size:12px;font-weight:650;color:var(--sm-mint)}.sm-v2-eyebrow img{width:27px;height:27px}
+.sm-v2-training-main strong{display:block;font-size:16px;margin:9px 0 5px}.sm-v2-training small{font-size:11px;line-height:1.45;color:var(--sm-off-white);opacity:.82}
+.sm-v2-avatars{display:flex;margin:9px 0 5px}.sm-v2-avatar{width:29px;height:29px;border:1px solid var(--sm-mint);border-radius:50%;background:var(--sm-deep-teal);display:grid;place-items:center;font-size:10px;margin-right:-5px}
+.sm-v2-progress{padding:18px}.sm-v2-progress-head{display:flex;align-items:center;justify-content:space-between;gap:10px}.sm-v2-progress h2{font-size:17px;margin:0}.sm-v2-progress-head span{font-size:13px;white-space:nowrap}
+.sm-v2-track{height:11px;background:rgba(247,250,249,.15);border-radius:100px;overflow:hidden;margin:16px 0 10px}.sm-v2-fill{height:100%;border-radius:inherit;background:linear-gradient(90deg,var(--sm-teal),var(--sm-mint));transition:width .35s ease}.sm-v2-progress p{font-size:12px;margin:0;color:var(--sm-warm-sand)}
+.sm-v2-list{min-height:91px;padding:14px 16px;display:flex;align-items:center;gap:14px}.sm-v2-list-body{flex:1;min-width:0}.sm-v2-list-body strong{display:block;font-size:18px;line-height:1.25;margin-bottom:5px}.sm-v2-list-body small{display:block;font-size:12px;line-height:1.45;opacity:.85}.sm-v2-chevron{font-size:30px;line-height:1;color:var(--sm-mint)}
+.sm-v2-insight{min-height:110px;border-color:rgba(143,233,209,.40);background:linear-gradient(115deg,rgba(6,107,110,.45),rgba(12,39,71,.75))}.sm-v2-insight .sm-v2-list-body strong{color:var(--sm-mint)}
+.sm-v2-pill{border:1px solid var(--sm-border);border-radius:999px;padding:4px 8px;color:var(--sm-mint);font-size:11px;white-space:nowrap}
+.sm-v2-dock{position:fixed;z-index:10;left:50%;bottom:max(12px,env(safe-area-inset-bottom));transform:translateX(-50%);width:min(calc(100% - 28px),530px);padding:10px 8px;display:grid;grid-template-columns:repeat(3,1fr);border-radius:28px;background:rgba(12,39,71,.88);border:1px solid rgba(143,233,209,.32);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:0 10px 30px rgba(0,0,0,.24)}
+.sm-v2-dock button{display:grid;justify-items:center;gap:3px;background:none;border:0;color:var(--sm-off-white);font:inherit;font-size:12px;cursor:pointer}.sm-v2-dock .sm-v2-nav-icon{width:41px;height:41px}.sm-v2-dock button[aria-current=page]{color:var(--sm-mint);font-weight:650}
+.sm-v2-root button:focus-visible{outline:2px solid var(--sm-mint);outline-offset:3px}
+@keyframes sm-v2-soft-pulse{0%,100%{border-color:rgba(143,233,209,.28)}50%{border-color:rgba(143,233,209,.50)}}
+@media(prefers-reduced-motion:reduce){.sm-v2-cta{animation:none}.sm-v2-fill,.sm-v2-nav-icon img{transition:none}}
+@media(max-width:360px){.sm-v2-shell{padding-left:12px;padding-right:12px}.sm-v2-training{gap:10px;padding:13px}.sm-v2-training-group{padding-left:10px}.sm-v2-list{gap:9px;padding:12px}.sm-v2-list .sm-v2-nav-icon{width:43px;height:43px}.sm-v2-cta{padding:13px;gap:10px}}
