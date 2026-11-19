@@ -1,0 +1,79 @@
+{
+  "$schema": "./schema.json",
+  "meta": {
+    "version": "1.0.0",
+    "source": "Smashi UI Design System",
+    "lastUpdated": "2026-11-19"
+  },
+  "fontFamily": {
+    "primary": {
+      "value": "Montserrat, system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+      "description": "Primary font family - Montserrat with system fallbacks",
+      "note": "Font files must be installed separately - see assets/fonts/GET_MONTSERRAT.md"
+    },
+    "mono": {
+      "value": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace",
+      "description": "Monospace font family for code"
+    }
+  },
+  "fontSize": {
+    "xs": {
+      "value": "12px",
+      "lineHeight": "16px",
+      "description": "Extra small - labels, captions"
+    },
+    "sm": {
+      "value": "14px",
+      "lineHeight": "20px",
+      "description": "Small - body secondary"
+    },
+    "base": {
+      "value": "16px",
+      "lineHeight": "24px",
+      "description": "Base - body text"
+    },
+    "lg": {
+      "value": "18px",
+      "lineHeight": "28px",
+      "description": "Large - emphasized text"
+    },
+    "xl": {
+      "value": "20px",
+      "lineHeight": "28px",
+      "description": "Extra large - section headers"
+    },
+    "2xl": {
+      "value": "24px",
+      "lineHeight": "32px",
+      "description": "2X large - page headers"
+    },
+    "3xl": {
+      "value": "30px",
+      "lineHeight": "36px",
+      "description": "3X large - display text"
+    },
+    "4xl": {
+      "value": "36px",
+      "lineHeight": "40px",
+      "description": "4X large - hero text"
+    }
+  },
+  "fontWeight": {
+    "regular": {
+      "value": 400,
+      "description": "Regular weight - body text"
+    },
+    "medium": {
+      "value": 500,
+      "description": "Medium weight - emphasis"
+    },
+    "semibold": {
+      "value": 600,
+      "description": "Semibold - headers, buttons"
+    },
+    "bold": {
+      "value": 700,
+      "description": "Bold - strong emphasis"
+    }
+  }
+}

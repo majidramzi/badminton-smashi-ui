@@ -1,0 +1,51 @@
+{
+  "$schema": "./schema.json",
+  "meta": {
+    "version": "1.0.0",
+    "source": "Smashi UI Design System",
+    "lastUpdated": "2026-11-19"
+  },
+  "glass": {
+    "blur": {
+      "value": "8px",
+      "description": "Frosted glass blur - subtle premium effect"
+    },
+    "background": {
+      "light": "rgba(255, 255, 255, 0.7)",
+      "dark": "rgba(21, 28, 36, 0.7)",
+      "description": "Semi-transparent glass background"
+    },
+    "note": "Use glass selectively with readable contrast. Respect reduced-motion preferences."
+  },
+  "shadow": {
+    "sm": {
+      "value": "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
+      "description": "Small shadow - subtle elevation"
+    },
+    "md": {
+      "value": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+      "description": "Medium shadow - cards"
+    },
+    "lg": {
+      "value": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+      "description": "Large shadow - modals, elevated cards"
+    },
+    "xl": {
+      "value": "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+      "description": "Extra large shadow - overlays"
+    }
+  },
+  "animation": {
+    "duration": {
+      "fast": "150ms",
+      "base": "200ms",
+      "slow": "300ms"
+    },
+    "easing": {
+      "default": "cubic-bezier(0.4, 0, 0.2, 1)",
+      "in": "cubic-bezier(0.4, 0, 1, 1)",
+      "out": "cubic-bezier(0, 0, 0.2, 1)",
+      "inOut": "cubic-bezier(0.4, 0, 0.2, 1)"
+    }
+  }
+}
