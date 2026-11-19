@@ -1,0 +1,102 @@
+{
+  "$schema": "./schema.json",
+  "meta": {
+    "version": "1.0.0",
+    "source": "Smashi UI Design System",
+    "lastUpdated": "2026-11-19"
+  },
+  "spacing": {
+    "0": {
+      "value": "0px",
+      "description": "Zero spacing"
+    },
+    "1": {
+      "value": "4px",
+      "description": "Extra small spacing"
+    },
+    "2": {
+      "value": "8px",
+      "description": "Small spacing"
+    },
+    "3": {
+      "value": "12px",
+      "description": "Medium-small spacing"
+    },
+    "4": {
+      "value": "16px",
+      "description": "Medium spacing - base unit"
+    },
+    "5": {
+      "value": "20px",
+      "description": "Medium-large spacing"
+    },
+    "6": {
+      "value": "24px",
+      "description": "Large spacing"
+    },
+    "8": {
+      "value": "32px",
+      "description": "Extra large spacing"
+    },
+    "10": {
+      "value": "40px",
+      "description": "2X large spacing"
+    },
+    "12": {
+      "value": "48px",
+      "description": "3X large spacing"
+    },
+    "16": {
+      "value": "64px",
+      "description": "4X large spacing"
+    }
+  },
+  "layout": {
+    "screenHorizontal": {
+      "value": "16px",
+      "description": "Horizontal padding for screen edges"
+    },
+    "cardGap": {
+      "value": "14px",
+      "description": "Gap between cards in lists"
+    },
+    "sectionGap": {
+      "value": "24px",
+      "description": "Gap between major sections"
+    }
+  },
+  "borderRadius": {
+    "sm": {
+      "value": "8px",
+      "description": "Small radius - inputs, small chips"
+    },
+    "md": {
+      "value": "12px",
+      "description": "Medium radius - buttons"
+    },
+    "lg": {
+      "value": "16px",
+      "description": "Large radius - cards"
+    },
+    "xl": {
+      "value": "20px",
+      "description": "Extra large radius - large cards"
+    },
+    "2xl": {
+      "value": "24px",
+      "description": "2X large radius - modal, bottom sheets"
+    },
+    "dock": {
+      "value": "28px",
+      "description": "Navigation dock radius"
+    },
+    "iconTile": {
+      "value": "30px",
+      "description": "Icon tile radius"
+    },
+    "full": {
+      "value": "9999px",
+      "description": "Fully rounded - pills, avatars"
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "$schema": "./schema.json",
+  "meta": {
+    "version": "1.0.0",
+    "source": "Smashi UI Design System",
+    "lastUpdated": "2026-11-19"
+  },
+  "brand": {
+    "navy": {
+      "value": "#0C2747",
+      "description": "Primary brand navy - deep blue foundation"
+    },
+    "deepTeal": {
+      "value": "#066B6E",
+      "description": "Deep teal accent - darker complement"
+    },
+    "teal": {
+      "value": "#14B8A6",
+      "description": "Primary teal - main accent color"
+    },
+    "mint": {
+      "value": "#8FE9D1",
+      "description": "Light mint - soft highlights"
+    },
+    "offWhite": {
+      "value": "#F7FAF9",
+      "description": "Off white - light backgrounds"
+    },
+    "warmSand": {
+      "value": "#F3EAD7",
+      "description": "Warm sand - accent backgrounds"
+    }
+  },
+  "semantic": {
+    "light": {
+      "background": "#F4F7FB",
+      "surface": "#FFFFFF",
+      "surfaceElevated": "#FFFFFF",
+      "border": "#D7E0EA",
+      "text": "#0F172A",
+      "textSecondary": "#64748B",
+      "textMuted": "#94A3B8",
+      "accent": "#14B8A6",
+      "accentDark": "#0D9488",
+      "accentSoft": "#CCFBF1",
+      "danger": "#DC2626",
+      "dangerSoft": "#FEE2E2",
+      "warning": "#D97706",
+      "warningSoft": "#FEF3C7",
+      "success": "#059669",
+      "successSoft": "#D1FAE5",
+      "chip": "#E8EEF5"
+    },
+    "dark": {
+      "background": "#0A1118",
+      "surface": "#151C24",
+      "surfaceElevated": "#1E293B",
+      "border": "#243041",
+      "text": "#FFFFFF",
+      "textSecondary": "#9AA4B2",
+      "textMuted": "#64748B",
+      "accent": "#14B8A6",
+      "accentDark": "#0D9488",
+      "accentSoft": "#134E4A",
+      "danger": "#F87171",
+      "dangerSoft": "#991B1B",
+      "warning": "#FBBF24",
+      "warningSoft": "#92400E",
+      "success": "#34D399",
+      "successSoft": "#064E3B",
+      "chip": "#1E293B"
+    }
+  }
+}
