@@ -1,0 +1,9 @@
+# Create account — proposed
+
+Review [the interactive preview](../../../previews/signup.html). Shares the Login preview stylesheet, static palette-derived backdrop, original mark, slogan, Montserrat, Lucide and control sizing. Names stack on mobile and share a row at 640 CSS px or wider. All other controls are single-column; form scrolls on short screens.
+
+Includes visible field labels, optional nickname, independent password visibility, strength and checklist, disabled/enabled submit, Google and preview-only Apple and a Log in link. Checklist and strength are synthetic UI behavior for design review, not a production validation contract. Bind to the host's existing policy and flows; do not change authentication or onboarding. Preview sends no account requests. Provider artwork retains the same preview-only status as Login.
+
+Follow approved Login defaults for the `OR` separator, provider buttons and hover; Apple appears in preview only and must be hidden until supported by each host. Field glyphs use Lucide. Show both strength and the checklist below Confirm password only while Password is nonempty. Too weak shows red text and meter as a proposed validation-only exception to the brand palette (`#FF8080`); retain the explicit label so color isn't the only signal.
+
+Show optional `ID` in place of the nickname label; no host field or backend rename is implied. Before Create account, require explicit Terms and Conditions consent. The link opens a modal loading a separate sample document; unlock the consent control only after reaching the end (or if the full text already fits). Reaching the end does not check the box. Modal acceptance explicitly checks it; closing without acceptance does not. Require consent in addition to the other form requirements. Sample copy is not legal content or production consent logic.
