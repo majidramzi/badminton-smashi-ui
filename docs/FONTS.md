@@ -1,6 +1,5 @@
 # Montserrat typography
-Montserrat is the agreed typeface. Tokens and CSS have been corrected from Inter to Montserrat.
-Font binaries (woff2/ttf/otf) are intentionally NOT included in this package. Obtain the licensed Montserrat font files from the official Google Fonts repository or Google Fonts CSS service and keep attribution/license as required.
-Web: currently uses CSS @import for Google Fonts in onboarding; for offline production hosting, download the official woff2 files and define @font-face for weights 400,500,600,700,800, with font-display:swap. Dashboard should use the same font family.
-Mobile: install the appropriate official Montserrat TTF/OTF files into the native project and register them using its platform-specific font loader. Verify file names and weights in the mobile stack before shipping.
-Official source: https://fonts.google.com/specimen/Montserrat
+
+Montserrat is the approved UI typeface for web and mobile. Use the checked-in [Montserrat files](../assets/fonts/Montserrat/): two variable TTFs (upright and italic), 18 static TTFs and the [SIL Open Font License](../assets/fonts/Montserrat/OFL.txt). No separate download is required to obtain these source files.
+
+Load local faces in the web app and register the selected TTF faces in the mobile app. Keep the license with distributed fonts. These are available files, not approved weight assignments: screen specifications will define weights, sizes and line heights separately. Do not typeset a replacement for the Smashi wordmark based solely on the UI font decision.

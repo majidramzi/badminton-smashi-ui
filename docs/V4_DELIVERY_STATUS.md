@@ -13,7 +13,7 @@
 ## Remaining dependencies (do not misrepresent as complete)
 1. **True vector logo:** The approved user-provided logo is raster. Request the original
    designer's SVG/AI/EPS master for an exact editable vector; tracing is not equivalent.
-2. **Montserrat font binaries:** Not bundled. See assets/fonts/GET_MONTSERRAT.md.
+2. **Montserrat integration:** Font binaries are checked in; consumers still need to register the approved faces. See [font documentation](FONTS.md).
 3. **Production integration:** Auth, API, routing, session data, accessibility and
    native app configuration must be wired to the real Smashi codebase.
 4. **Visual QA:** User-approved dashboard is a reference; validate against screenshots.

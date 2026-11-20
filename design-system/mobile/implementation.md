@@ -1,5 +1,7 @@
 # Mobile Implementation Guide (React Native / Expo)
 
+> For current logo selection and slogan rules, use the [Smashi logo contract](../../docs/BRAND_LOGO.md). It supersedes older logo examples below.
+
 این راهنما نحوه پیاده‌سازی Design Tokens در پروژه **badminton-mobile** را توضیح می‌دهد.
 
 ## 1. نگاشت Colors
