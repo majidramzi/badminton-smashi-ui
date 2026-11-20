@@ -1,5 +1,7 @@
 # Web Implementation Guide (Next.js / React / Tailwind)
 
+> For current logo selection and slogan rules, use the [Smashi logo contract](../../docs/BRAND_LOGO.md). It supersedes older logo examples below.
+
 این راهنما نحوه پیاده‌سازی Design Tokens در پروژه **badminton-web** را توضیح می‌دهد.
 
 ## 1. نگاشت Colors به CSS Variables

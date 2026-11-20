@@ -1,4 +1,6 @@
 # Logo provenance and fidelity
+
+> For current logo selection and slogan rules, use the [Smashi logo contract](BRAND_LOGO.md). It supersedes older logo examples below.
 - Source files were already present in this project: `SmashiS.png` and `Smashi_Logo_High_Resolution.png`.
 - `assets/brand/*-raster.png` are transparent-background derivatives cropped from those images, with original contours and shading preserved. They are high-resolution raster exports, NOT true vector masters.
 - `*-raster-embedded.svg` are SVG wrappers containing PNG image data. They are NOT editable vector paths and should not be represented as true vector logos.
