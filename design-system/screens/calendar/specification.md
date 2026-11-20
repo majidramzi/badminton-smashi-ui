@@ -1,14 +1,16 @@
 # Calendar Screen Specification
 
-**مرجع تصویری:** `../../assets/reference/smashi_badminton_calendar_dashboard.png`
+> Draft reference. Earlier dual-theme examples and visual values are historical, not instructions for the current fixed Smashi theme.
+
+**Visual reference:** [Calendar artwork](../../../assets/reference/smashi_badminton_calendar_dashboard.png)
 
 ## Layout Overview
 
-صفحه Calendar نمای هفتگی یا ماهانه تمرینات را نمایش می‌دهد:
-- Header با انتخاب ماه/هفته
+Calendar shows a weekly or monthly view of training:
+- Header with month/week selection
 - Calendar grid
-- لیست تمرینات روز انتخاب شده
-- دکمه Quick Add Training
+- Training list for the selected day
+- Quick Add Training button
 - Navigation dock (Home / Calendar / Profile)
 
 ## Components
@@ -33,8 +35,8 @@
 - Padding: `spacing[4]` (16px)
 
 **Interaction:**
-- Arrows برای تغییر ماه/هفته
-- Tap on title برای date picker
+- Arrows switch the month or week
+- Tap the title to open the date picker
 
 ---
 
@@ -52,7 +54,7 @@
 ```
 
 **Cell Design:**
-- Width/Height: یکسان (مربع)
+- Equal width and height (square)
 - Border radius: `borderRadius.sm` (8px)
 
 **States:**
@@ -66,7 +68,7 @@
 - Text color: white
 
 **Has Training:**
-- Dot indicator زیر عدد
+- Dot indicator below the date number
 - Dot color: `brand.teal`
 
 **Disabled (other month):**
@@ -92,8 +94,8 @@
 
 **Layout:**
 - Horizontal scroll
-- نمایش 7 روز
-- Dot indicators برای training days
+- Display seven days
+- Dot indicators on training days
 
 ---
 
@@ -132,7 +134,7 @@
 
 **Colors:**
 - Left border accent: `brand.teal` (4px)
-- یا colored dot قبل از time
+- Or show a colored dot before the time
 
 ---
 
@@ -147,8 +149,8 @@
 ```
 
 **Implementation:**
-- برای web: colored dot یا icon
-- برای mobile: badge component
+- Web: colored dot or icon
+- Mobile: badge component
 
 ---
 
@@ -183,8 +185,8 @@
 ```
 
 **Position:**
-- Fixed در bottom-right
-- Offset: `spacing[4]` (16px) از edges
+- Fixed in the bottom-right corner
+- Offset: `spacing[4]` (16px) from the edges
 
 **Design:**
 - Size: 56x56px
@@ -225,7 +227,7 @@
 
 **Chips:**
 - Background: `chip`
-- Selected: `brand.teal` با white text
+- Selected: `brand.teal` with white text
 - Border radius: `borderRadius.full`
 - Padding: `8px 16px`
 
@@ -233,7 +235,7 @@
 
 ## Dark/Light Mode
 
-تمام colors از `semantic.[theme]`:
+The earlier dual-theme proposal sourced colors from `semantic.[theme]`:
 - Calendar cells: `surface` / `chip` for selected
 - Borders: `border`
 - Text: `text` / `textSecondary`
@@ -242,18 +244,18 @@
 
 ## Accessibility
 
-- [ ] Calendar cells navigable با keyboard
+- [ ] Calendar cells are keyboard-navigable
 - [ ] Screen reader announces selected date
 - [ ] Focus visible states
-- [ ] ARIA labels برای training cards
+- [ ] ARIA labels for training cards
 
 ---
 
 ## Animations
 
-- [ ] Calendar slide animation برای month change
-- [ ] Smooth scroll به selected day
-- [ ] Fade in برای training cards
+- [ ] Slide animation when switching months
+- [ ] Smooth scroll to the selected day
+- [ ] Fade in training cards
 - [ ] Respect `prefers-reduced-motion`
 
 ---
@@ -261,14 +263,14 @@
 ## Platform-Specific
 
 ### Web
-- Hover states برای calendar cells
-- Click outside برای close date picker
-- Keyboard shortcuts (arrows برای navigation)
+- Hover states for calendar cells
+- Click outside to close the date picker
+- Arrow keys for navigation
 
 ### Mobile
-- Swipe برای month change
+- Swipe to switch months
 - Pull-to-refresh
-- Long press برای quick actions
+- Long press for quick actions
 - Haptic feedback on date selection
 
 ---
@@ -290,10 +292,10 @@ interface CalendarTraining {
 
 ---
 
-## چک‌لیست Implementation
+## Implementation checklist
 
 - [ ] Month/Week view toggle
-- [ ] Calendar grid با today/selected states
+- [ ] Calendar grid with today and selected states
 - [ ] Training indicator dots
 - [ ] Selected day details list
 - [ ] Training status badges
@@ -303,4 +305,4 @@ interface CalendarTraining {
 - [ ] Filter chips (optional)
 - [ ] Dark/light mode
 - [ ] Accessibility
-- [ ] تطابق با reference image
+- [ ] Compare the implementation against the reference artwork

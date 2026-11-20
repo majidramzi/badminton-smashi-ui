@@ -1,15 +1,17 @@
 # Home Screen Specification
 
-**مرجع تصویری:** `../../assets/reference/Smashi_Dashboard_Approved_Official_Logo.png`
+> Draft reference. Earlier dual-theme examples and visual values are historical, not instructions for the current fixed Smashi theme.
+
+**Visual reference:** [Home artwork](../../../assets/reference/Smashi_Dashboard_Approved_Official_Logo.png)
 
 ## Layout Overview
 
-صفحه Home اصلی‌ترین صفحه اپلیکیشن است که شامل:
-- Greeting با نام کاربر و زمان روز
-- دکمه اصلی "Design a Training"
-- کارت Upcoming Training / Group Session
-- نوار پیشرفت هفتگی
-- کارت AI Insights
+Home is the main application screen and includes:
+- A greeting with the user's name and the time of day
+- The primary “Design a Training” button
+- An Upcoming Training / Group Session card
+- A weekly progress bar
+- An AI Insights card
 - Recent Sessions
 - Friends Activity
 - Navigation dock (Home / Calendar / Profile)
@@ -61,7 +63,7 @@ function getGreeting(hour: number): string {
 
 **Dimensions:**
 - Height: 56px
-- Full width با horizontal padding
+- Full width with horizontal padding
 
 **Colors:**
 - Background: `brand.teal` (#14B8A6)
@@ -76,8 +78,8 @@ function getGreeting(hour: number): string {
 - `borderRadius.2xl` (24px)
 
 **Icon:**
-- Lightning bolt icon قبل از متن
-- اندازه: 20px
+- Lightning bolt icon before the label
+- Size: 20px
 
 **Animation:**
 - Subtle scale on press (0.98)
@@ -104,8 +106,8 @@ function getGreeting(hour: number): string {
 - Shadow: `shadow.md`
 
 **States:**
-- Solo training: آیکون شخص
-- Group session: تعداد افراد + آواتارها
+- Solo training: person icon
+- Group session: participant count and avatars
 
 **Typography:**
 - Time/Date: `fontSize.sm` (14px), color: `textSecondary`
@@ -137,7 +139,7 @@ function getGreeting(hour: number): string {
 - Count: `fontSize.xs` (12px), `textSecondary`
 
 **Animation:**
-- Progress fill با animated width
+- Progress fill animates its width
 - Duration: `animation.duration.slow` (300ms)
 
 ---
@@ -156,22 +158,22 @@ function getGreeting(hour: number): string {
 ```
 
 **Layout:**
-- Background: gradient یا glass effect
+- Background: gradient or glass effect
 - Border radius: `borderRadius.xl` (20px)
 - Padding: `spacing[5]` (20px)
 
 **Colors:**
-- Background: subtle gradient از `brand.mint` to `brand.teal` با opacity
-- یا glass effect با `effects.glass.background`
+- Background: subtle gradient from `brand.mint` to `brand.teal` with opacity
+- Alternatively, use glass with `effects.glass.background`
 
 **Typography:**
 - Title: `fontSize.lg` (18px), `fontWeight.semibold`
-- Insight text: `fontSize.base` (16px), `lineHeight` بلند برای readability
+- Insight text: `fontSize.base` (16px), with a generous `lineHeight` for readability
 - Button: `fontSize.sm` (14px), `brand.teal`
 
 **Important:**
-- این کارت فقط زمانی نمایش داده می‌شود که insight واقعی موجود باشد
-- هیچ‌وقت fake/hardcoded insights نمایش ندهید
+- Show this card only when a real insight is available
+- Never display fabricated or hardcoded insights
 
 ---
 
@@ -220,11 +222,11 @@ function getGreeting(hour: number): string {
 ```
 
 **Layout:**
-- مشابه Recent Sessions
+- Similar to Recent Sessions
 - Avatar + Name + Activity
 
 **Colors:**
-- "training now" badge: `semantic.success` با soft background
+- “Training now” badge: `semantic.success` with a soft background
 
 ---
 
@@ -239,19 +241,19 @@ function getGreeting(hour: number): string {
 
 **Layout:**
 - Fixed position bottom
-- Background: `surface` با glass effect
+- Background: `surface` with a glass effect
 - Border radius: `borderRadius.dock` (28px)
 - Padding: `spacing[3]` (12px)
 - Shadow: `shadow.lg`
 
 **Items:**
-- 3 تب: Home, Calendar, Profile
-- Active state: `brand.teal` background با `borderRadius.md`
+- Three tabs: Home, Calendar, Profile
+- Active state: `brand.teal` background with `borderRadius.md`
 - Inactive state: `textSecondary`
 
 **Icons:**
-- اندازه: 24px
-- از `../../assets/icons/glyphs/` استفاده کنید
+- Size: 24px
+- Use `../../../assets/icons/glyphs/`
 
 **Typography:**
 - Label: `fontSize.xs` (12px)
@@ -263,36 +265,36 @@ function getGreeting(hour: number): string {
 ### Mobile (< 768px)
 - Full width cards
 - Single column layout
-- Navigation dock در bottom
+- Bottom navigation dock
 
 ### Tablet / Desktop (≥ 768px)
-- Max width: 600px در center
-- یا grid layout 2 column برای cards
-- Navigation در sidebar (optional)
+- Centered, with a maximum width of 600px
+- Alternatively, use a two-column card grid
+- Optional sidebar navigation
 
 ---
 
 ## Dark/Light Mode
 
-همه رنگ‌ها از `semantic.[theme]` می‌آیند:
-- `theme = 'dark'` → استفاده از `colors.semantic.dark`
-- `theme = 'light'` → استفاده از `colors.semantic.light`
+The earlier dual-theme proposal used `semantic.[theme]`:
+- `theme = 'dark'` → `colors.semantic.dark`
+- `theme = 'light'` → `colors.semantic.light`
 
 ---
 
 ## Accessibility
 
-- [ ] تمام interactive elements دارای accessible label
-- [ ] Contrast ratio حداقل 4.5:1 برای text
-- [ ] Focus visible برای keyboard navigation
-- [ ] Screen reader support برای AI Insights
+- [ ] Accessible labels for all interactive elements
+- [ ] At least 4.5:1 contrast for text
+- [ ] Visible keyboard focus
+- [ ] Screen reader support for AI Insights
 
 ---
 
 ## Animation & Motion
 
 - [ ] Respect `prefers-reduced-motion`
-- [ ] Subtle animations برای:
+- [ ] Subtle animations for:
   - Card press (scale 0.98)
   - Progress bar fill
   - Page transitions
@@ -303,27 +305,27 @@ function getGreeting(hour: number): string {
 ## Platform-Specific Notes
 
 ### Web
-- استفاده از Tailwind classes
-- Glass effect با `backdrop-blur`
-- Hover states برای buttons
+- Use Tailwind classes
+- Glass effect with `backdrop-blur`
+- Hover states for buttons
 
 ### Mobile
-- استفاده از React Native StyleSheet
-- Glass effect با `BlurView` (iOS) یا semi-transparent background (Android)
-- Pressable با haptic feedback
+- Use React Native StyleSheet
+- Glass effect with `BlurView` (iOS) or a translucent background (Android)
+- Pressable with haptic feedback
 
 ---
 
-## چک‌لیست Implementation
+## Implementation checklist
 
-- [ ] Greeting با نام کاربر
-- [ ] Primary CTA button با icon
+- [ ] Greeting with the user's name
+- [ ] Primary CTA button with an icon
 - [ ] Upcoming training card (solo/group states)
-- [ ] Weekly progress bar با animation
-- [ ] AI Insights (فقط با data واقعی)
+- [ ] Weekly progress bar with animation
+- [ ] AI Insights (real data only)
 - [ ] Recent sessions list
 - [ ] Friends activity
-- [ ] Navigation dock با 3 tabs
+- [ ] Navigation dock with three tabs
 - [ ] Dark/light mode support
 - [ ] Accessibility labels
-- [ ] تطابق کامل با reference image
+- [ ] Compare the implementation against the reference artwork

@@ -1,32 +1,7 @@
-# Design Tokens
+# Smashi design tokens
 
-این فایل‌ها **مرجع اصلی** برای تمام مقادیر طراحی در Smashi هستند.
+`colors.json` records the six approved brand primitives. Its separate Light/Dark semantic sections predate the fixed Smashi theme and are not current design instructions. `typography.json`, `spacing.json`, and `effects.json` contain working scales and effects; apply screen-specific values from a reviewed spec rather than assuming every legacy value is approved.
 
-## ساختار
+Do not change approved palette values or invent parallel values in consumers. Record new shared roles here before adopting them on both platforms. `src/styles/tokens.json` is a legacy starter snapshot; generated outputs and schema validation are not available yet.
 
-- `colors.json` - پالت رنگی برند و semantic colors برای light/dark mode
-- `typography.json` - فونت‌ها، اندازه‌ها، وزن‌ها
-- `spacing.json` - فاصله‌گذاری، padding، margin، border radius
-- `effects.json` - سایه‌ها، glass effect، انیمیشن‌ها
-
-## استفاده در پروژه‌ها
-
-### Mobile (React Native / Expo)
-راهنمای کامل: `../mobile/implementation.md`
-
-### Web (Next.js / React)
-راهنمای کامل: `../web/implementation.md`
-
-## قوانین مهم
-
-1. ⚠️ **هیچ‌وقت مقادیر را hardcode نکنید** - همیشه از tokens استفاده کنید
-2. ⚠️ **رنگ‌های brand را تغییر ندهید** - این مقادیر تایید شده هستند
-3. ⚠️ **برای افزودن token جدید** - ابتدا در این فایل‌ها اضافه کنید، سپس در هر دو پلتفرم پیاده‌سازی کنید
-
-## مرجع طراحی
-
-تصاویر مرجع در: `../../assets/reference/`
-
-- `Smashi_Dashboard_Approved_Official_Logo.png` - صفحه Home
-- `smashi_badminton_calendar_dashboard.png` - صفحه Calendar
-- `logo.png` - لوگو اصلی Smashi
+See the [web guide](../web/implementation.md) and [mobile guide](../mobile/implementation.md). Historical artwork is under [assets/reference](../../assets/reference/); use the [brand contract](../../docs/BRAND_LOGO.md) for logo selection.
